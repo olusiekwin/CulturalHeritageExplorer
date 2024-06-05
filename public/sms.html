@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Service</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans">
+    <header class="bg-green-600 text-white p-4 text-center">
+        <h1 class="text-2xl font-bold">SMS Service</h1>
+    </header>
+    <main class="flex flex-col items-center p-6">
+        <section class="bg-white p-8 rounded-lg shadow-lg w-full max-w-2xl">
+            <p class="mb-4">Use our SMS service to send and receive messages.</p>
+            <form action="/sms/send" method="post" class="space-y-4">
+                <div>
+                    <label for="phone" class="block text-lg font-medium mb-1">Recipient's Phone Number:</label>
+                    <input type="text" id="phone" name="phone" required class="w-full p-2 border rounded-lg">
+                </div>
+                <div>
+                    <label for="message" class="block text-lg font-medium mb-1">Message:</label>
+                    <textarea id="message" name="message" required class="w-full p-2 border rounded-lg"></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-lg">Send</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Cultural Heritage Explorer</p>
+    </footer>
+</body>
+</html>

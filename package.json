@@ -1,0 +1,21 @@
+{
+  "name": "CulturalHeritageExplorer",
+  "version": "1.0.0",
+  "description": "A platform to explore cultural heritage using SMS and USSD services.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build:css": "npx tailwindcss build public/styles.css -o public/output.css"
+  },
+  "dependencies": {
+    "africastalking": "^1.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "tailwindcss": "^2.2.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5"
+  }
+}
